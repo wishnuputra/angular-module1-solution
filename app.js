@@ -11,8 +11,6 @@ function LunchCheckController($scope) {
   $scope.bonAppetit = "";
   var dishesList = [];
 
-  // console.log($scope.dishes);
-
   $scope.checkIfTooMuch = function () {
     dishesList = $scope.dishes.split(',');
     console.log(dishesList);
@@ -24,8 +22,6 @@ function LunchCheckController($scope) {
       $scope.bonAppetit = "Too much!"
     }
   };
-
 }
-
 
 })();
